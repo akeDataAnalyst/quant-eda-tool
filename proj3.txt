@@ -1,0 +1,27 @@
+Project 3: Internal Quant Tool for Exploratory Data Analysis
+
+Description
+
+An interactive utility that allows quants to upload datasets, perform ad-hoc explorations (e.g., correlations, distributions), and automate basic preprocessing—designed for a research-driven environment to streamline data prep without engineering overhead.
+Problem and Solution
+Problem: Quants in trading firms often face unstructured datasets from diverse sources, requiring manual exploration that slows down hypothesis testing in a competitive market where rapid iteration is key.
+
+Solution: Create a self-service tool for quick insights and automation, cutting exploration time by  70% through predefined analyses, fostering efficient support for ad-hoc research tasks in a stable workflow.Stacks to UsePython (scripting and utilities)
+Pandas (data exploration and manipulation)
+NumPy (array-based computations for stats)
+Streamlit (web app for user interaction and visualizations)
+
+Phase-by-Phase Implementation
+Project Initialization: Install libraries. Source datasets like public financial time-series from Quandl or Kaggle (e.g., "Cryptocurrency Historical Prices"). Prepare sample CSVs with mixed data types.
+Data Ingestion and Basic Checks: Script to load via Pandas read_csv(). 
+Run quality checks: data types, unique values (df.nunique()), and missing data summaries.
+Exploratory Analysis Functions: Build modular functions—correlations with Pandas corr() and NumPy for matrix ops; distributions via histograms (np.histogram). Compute advanced stats like skewness (scipy.stats.skew if needed, but stick to NumPy).
+Automation Utilities: Add one-click features: Normalize columns (df.apply(lambda x: (x - np.mean(x)) / np.std(x))), groupby aggregations. Ensure outputs are exportable.
+Streamlit App Assembly: Develop UI with file upload, sidebar options for analysis types (e.g., checkboxes for correlations). Render results dynamically: st.dataframe for tables, st.pyplot for NumPy-based plots integrated with Matplotlib.
+Validation and Refinement: Edge-case testing (e.g., non-numeric data). Profile for efficiency on large sets. Add documentation in code and a GitHub README with usage examples.
+Alignment to Eqvilent Needs: Focus on intellectual tasks like signal exploration (e.g., rolling correlations for market regimes). Highlight collaboration by making the tool shareable for quant-engineer workflows.
+
+quant-eda-tool
+
+
+
