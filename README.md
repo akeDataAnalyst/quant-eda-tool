@@ -20,4 +20,4 @@ It directly demonstrates proficiency in:
 
 ## Live Demo
 
-🔗 **[Live App](https://your-username-quant-eda-tool.streamlit.app)**  
+🔗 **[Live App](https://quant-eda-tool-2ywanpm58pgoqhhcsv8a5b.streamlit.app/)**  
